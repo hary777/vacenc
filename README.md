@@ -1,6 +1,6 @@
 # vacenc
 
-Hannob inspired me with his `vacdec` [https://github.com/hannob/vacdec]https://github.com/hannob/vacdec
+Hannob inspired me with his `vacdec` https://github.com/hannob/vacdec
 
 Python script to encode something like EU Covid-19 vaccine certificate.
 
