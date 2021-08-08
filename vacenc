@@ -1,0 +1,49 @@
+#!/usr/bin/env python
+
+import sys
+import zlib
+
+import base45
+import cbor2
+import os
+
+
+fd = open(sys.argv[1], "rb")
+data = fd.read()
+
+print("---")
+print(data)
+
+dictionary = eval(data)
+print("---")
+print(dictionary)
+print("---")
+print(type(dictionary))
+
+cborencoded = cbor2.dumps(dictionary)
+
+print("---")
+print(cborencoded)
+
+object = cbor2.CBORTag(18, [b'\xf1\x21&', {4: b'{\x54G\xf9\x29"0\x99'}, cborencoded])
+print("---")
+print(object)
+
+cborencoded = cbor2.dumps(object)
+print("---")
+print(cborencoded)
+
+zlibdata = zlib.compress(cborencoded)
+print("---")
+print(zlibdata)
+
+b45data = base45.b45encode(zlibdata)
+print("---")
+print(b45data)
+
+qrstring = "HC1:" + str(b45data, "ascii")
+print("---")
+print(qrstring)
+
+os.system("qrencode -o output.png -l H '" + qrstring + "'")
+
