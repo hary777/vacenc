@@ -1,0 +1,27 @@
+{
+	1: 'CZ',
+	4: 1658166071,
+	6: 1626630071,
+	-260: {
+		1: {
+			'v': [{'ci': 'URN:UVCI:01:CZ:WINC3Z3V5N4T8WH9WJHAHAM6ASRVGM56',
+				'co': 'CZ',
+				'dn': 2,
+				'dt': '2021-08-02',
+				'is': 'Ministry of Health of the Czech Republic',
+				'ma': 'ORG-100001699',
+				'mp': 'EU/1/21/1529',
+				'sd': 2,
+				'tg': '840539006',
+				'vp': '1119305005'}],
+			'dob': '1949-10-08',
+			'nam':{
+				'fn': 'NOVÁK',
+				'gn': 'JAN',
+				'fnt': 'NOVAK',
+				'gnt': 'JAN'},
+				
+			'ver': '1.0.1'
+		}
+	}
+}

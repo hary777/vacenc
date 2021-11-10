@@ -1,10 +1,10 @@
 # vacenc
 
-Hannob inspired me with his `vacdec` https://github.com/hannob/vacdec
+Hannob inspired me with his `vacdec` [https://github.com/hannob/vacdec]https://github.com/hannob/vacdec
 
 Python script to encode something like EU Covid-19 vaccine certificate.
 
-This script takes a string with python dictionary as parameter and create output.png
+This script takes a string with python dictionary string as parameter and create output.png
 It is reversed version of Hannobs's vacdec. You need to get own sample data.
 
 ## setup
@@ -27,7 +27,7 @@ dnf install qrencode
 Run:
 
 ```
-./vacenc [somepydictstring]
+./vacenc sample_data.txt
 ```
 
 
